@@ -1,6 +1,8 @@
 # 🎤 AI Interview Practice Platform:
 
 Welcome to **AI Interviewer**! This platform helps you prepare and practice for your next interview in a realistic, AI-powered environment that simulates a real online interview.🌟
+![](./app/screenshot.png)
+
 
 ## 🚀 Features
 
