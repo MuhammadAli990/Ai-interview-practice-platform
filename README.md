@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎤 AI Interview Practice Platform:
 
-## Getting Started
+Welcome to **AI Interviewer**! This platform helps you prepare and practice for your next interview in a realistic, AI-powered environment that simulates a real online interview.🌟
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Personalized Interview Questions**: The website asks you for your job role, job description, and years of experience, and then uses AI to generate 5 interview questions ranging from easy to hard. 📝
+- **Realistic Interview Environment**: 
+  - You can read the questions or use a built-in button to have the website speak them for you just like in a real interview! 🎙️
+  - Webcam and microphone permissions are requested to create a realistic interview environment. 📷🎤 (Webcam is optional, microphone is required to record your answers.)
+- **AI-Generated Report**: After you answer the questions, the AI will generate a report with:
+  - Total score out of 100 ✅
+  - Individual ratings for each question (out of 10) ⭐
+  - Feedback on your answers 🗣️
+  - The ideal answer to each question 📚
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js 14**: The framework used to build the app 🚀
+- **Gemini API**: The AI engine generates personalized interview questions and provides detailed reports based on your answers to help you improve 🤖
+- **Tailwind CSS**: For styling the website ⚡
+- **ShadCN**: For UI components and interactions ✨
+- **Clerk**: For authentication 🔐
+- **MongoDB**: Database to store your generated interviews and reports 💾
+- **React-Webcam**: For accessing the user's webcam 📸
+- **React-Hook-Speech-To-Text**: For converting speech into text using Web Speech API 🗣️➡️📝
+- **Web Speech API**: For speaking the interview questions to you 🎤
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ⚙️ Installation
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/ai-interview-practice.git
+2. Navigate to the project folder:
+   ```bash
+   cd Ai-Interview-Practice-Platform
+3. Install the dependencies:
+    ```bash
+    npm install
+4. Create a .env file in the root directory and add the following environment variables:
+    ```bash
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+    CLERK_SECRET_KEY=your-clerk-secret-key
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    MONGODB_URI=your-mongo-db-uri
+    NEXT_PUBLIC_GEMINI_KEY=your-gemini-api-key
+5. Start the development server:
+    ```bash
+    npm run dev
+6. Open the app in your browser:
+    ```bash
+    http://localhost:3000
